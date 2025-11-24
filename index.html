@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Посвідчення водія під ключ</title>
+
+  <!-- TikTok Pixel Code (підстав свій ID за потреби) -->
+  <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;
+      var ttq=w[t]=w[t]||[];
+      ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+      ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};  
+      for(var i=0;i<ttq.methods.length;i++) ttq.setAndDefer(ttq,ttq.methods[i]);
+      ttq.instance=function(t){for(var e=ttq._i[t]=[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+      ttq.load=function(e,n){
+        var r="https://analytics.tiktok.com/i18n/pixel/events.js", o=n&&n.partner;
+        ttq._i=ttq._i||{}, ttq._i[e]=[], ttq._i[e]._u=r;
+        ttq._t=ttq._t||{}, ttq._t[e]=+new Date;
+        ttq._o=ttq._o||{}, ttq._o[e]=n||{};
+        var s=d.createElement("script");
+        s.type="text/javascript"; s.async=!0;
+        s.src=r+"?sdkid="+e+"&lib="+t;
+        var x=d.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s,x);
+      };
+      ttq.load('D0MTJ1BC77UBLRIENLK0');  // заміни на свій, якщо треба
+      ttq.page();
+    }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
+
+  <!-- AOS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Основний стиль -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Навігація -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#hero" class="brand">
+        <img src="logo.png" alt="Логотип" class="logo-img" />
+        <span>Сервіс оформлення посвідчень</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link"><i class="fa-solid fa-house"></i> Головна</a>
+        <a href="#about" class="nav-link"><i class="fa-solid fa-circle-info"></i> Про нас</a>
+        <a href="#benefits" class="nav-link"><i class="fa-solid fa-trophy"></i> Переваги</a>
+        <a href="#how" class="nav-link"><i class="fa-solid fa-gear"></i> Як працюємо</a>
+        <a href="#services" class="nav-link"><i class="fa-solid fa-briefcase"></i> Послуги</a>
+        <a href="#categories" class="nav-link"><i class="fa-solid fa-list"></i> Категорії</a>
+        <a href="#license" class="nav-link"><i class="fa-solid fa-circle-question"></i> Ліцензія</a>
+        <a href="#reviews" class="nav-link"><i class="fa-solid fa-star"></i> Відгуки</a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Контакти</a>
+        <a href="https://t.me/vasia_mreo" class="btn-telegram-top" target="_blank">
+          <i class="fa-brands fa-telegram"></i> Telegram
+        </a>
+      </nav>
+
+      <button class="burger" id="burgerBtn" aria-label="Відкрити меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="section-inner hero-grid" data-aos="zoom-in">
+        <div class="hero-text-block">
+          <p className="hero-label"><span>Супровід під ключ</span></p>
+          <h1>
+            Оформлення посвідчення водія
+            <span class="accent">«під ключ»</span> з повним супроводом
+          </h1>
+          <p class="hero-subtitle">
+            Беремо на себе всі організаційні питання: підготовка документів, консультації,
+            запис і контроль етапів оформлення. Ви економите час та уникаєте зайвої бюрократії,
+            дотримуючись чинних правил і вимог.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-green">
+              Залишити заявку
+            </a>
+            <a href="https://t.me/vasia_mreo" target="_blank" class="btn btn-outline-light">
+              <i class="fa-brands fa-telegram"></i> Написати в Telegram
+            </a>
+          </div>
+          <p class="hero-note">
+            Працюємо щодня. Консультуємо, пояснюємо крок за кроком, що й коли потрібно зробити.
+          </p>
+        </div>
+
+        <div class="hero-info-card" data-aos="fade-left">
+          <div class="hero-info-header">
+            <span><i class="fa-solid fa-clock"></i> Орієнтовні терміни</span>
+          </div>
+          <ul class="hero-list">
+            <li><strong>Супровід первинного оформлення:</strong> від 7–10 робочих днів*</li>
+            <li><strong>Заміна у зв’язку зі строком:</strong> за узгодженим графіком</li>
+            <li><strong>Відновлення при втраті:</strong> допомога з документами та записом</li>
+            <li class="hero-small">
+              * Терміни можуть змінюватися залежно від завантаженості сервісних центрів та вимог законодавства.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Про нас -->
+    <section id="about" class="section about-section" data-aos="fade-up">
+      <div class="section-inner about-grid">
+        <div class="about-icon">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">Про нас</h2>
+          <p>
+            Ми команда, яка допомагає оформити та перевипустити посвідчення водія
+            без зайвих черг і нервів. Ви не витрачаєте час на з’ясування нюансів —
+            ми все пояснюємо і супроводжуємо на кожному етапі.
+          </p>
+          <p>
+            Працюємо без вихідних, залишаємося на зв’язку до того моменту, поки ви
+            не отримаєте готовий документ через офіційні органи відповідно до законодавства.
+          </p>
+          <p>
+            Гарантуємо конфіденційність — ваші дані обробляються коректно та використовуються
+            виключно для оформлення офіційних процедур.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Наші переваги -->
+    <section id="benefits" class="section benefits-section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2 class="section-title">Наші переваги</h2>
+        <p class="section-subtitle">
+          Супроводжуємо вас від першого повідомлення і до отримання готового документа.
+        </p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <h3>Економія часу</h3>
+            <p>Мінімізуємо вашу особисту присутність там, де це можливо за правилами.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>Знання процедур</h3>
+            <p>Орієнтуємось у вимогах, документах та типових ситуаціях при оформленні.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Прозорість</h3>
+            <p>Пояснюємо всі кроки та діємо в межах чинного законодавства.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>Підтримка 24/7</h3>
+            <p>Відповідаємо на запитання та тримаємо в курсі статусу вашого оформлення.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fa-solid fa-wallet"></i>
+            </div>
+            <h3>Зручні оплати</h3>
+            <p>Домовляємось про формат оплати, комфортний саме для вас.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Як ми працюємо -->
+    <section id="how" class="section how-section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2 class="section-title">Як ми працюємо?</h2>
+        <p class="section-subtitle">
+          Простий маршрут із чіткими кроками — ми попереджаємо, що і коли відбудеться.
+        </p>
+        <div class="steps-grid">
+          <div class="step-card">
+            <span class="step-number">1</span>
+            <i class="fa-solid fa-upload"></i>
+            <h3>Заявка та консультація</h3>
+            <p>Пишете нам у Telegram або на сайті — уточнюємо вашу ситуацію та варіанти рішень.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">2</span>
+            <i class="fa-solid fa-file-alt"></i>
+            <h3>Підготовка документів</h3>
+            <p>Розповідаємо, що потрібно зібрати, допомагаємо заповнити заяви та форми.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">3</span>
+            <i class="fa-solid fa-box-open"></i>
+            <h3>Запуск процесу</h3>
+            <p>Організовуємо подачу документів та супроводжуємо вас на узгоджених етапах.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">4</span>
+            <i class="fa-solid fa-camera-retro"></i>
+            <h3>Підтвердження статусу</h3>
+            <p>Надаємо інформацію щодо етапів розгляду та можливість перевірити результат.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">5</span>
+            <i class="fa-solid fa-credit-card"></i>
+            <h3>Розрахунок</h3>
+            <p>Оплачуєте послуги згідно з домовленістю після виконання обумовленого обсягу робіт.</p>
+          </div>
+          <div class="step-card">
+            <span class="step-number">6</span>
+            <i class="fa-solid fa-star"></i>
+            <h3>Готове посвідчення</h3>
+            <p>Отримуєте документ у встановленому порядку й користуєтесь ним у повсякденному житті.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Послуги -->
+    <section id="services" class="section services-section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2 class="section-title">Наші послуги</h2>
+        <p class="section-subtitle">
+          Підбираємо формат саме під вашу ситуацію: первинне оформлення, заміна, відновлення та консультації.
+        </p>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-id-card-clip"></i>
+            </div>
+            <h3>Первинне оформлення</h3>
+            <p>Допомога з повним пакетом документів для першого отримання посвідчення.</p>
+            <div class="card-buttons">
+              <a href="https://t.me/vasia_mreo" class="btn btn-outline" target="_blank">Дізнатись</a>
+              <a href="#contact" class="btn btn-green">Замовити</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-arrow-rotate-left"></i>
+            </div>
+            <h3>Відновлення після втрати</h3>
+            <p>Пояснюємо порядок дій, готуємо документи для відновлення посвідчення.</p>
+            <div class="card-buttons">
+              <a href="https://t.me/vasia_mreo" class="btn btn-outline" target="_blank">Дізнатись</a>
+              <a href="#contact" class="btn btn-green">Замовити</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-hourglass-end"></i>
+            </div>
+            <h3>Заміна за строком</h3>
+            <p>Допомагаємо оновити документ, якщо спливає термін дії або змінюються дані.</p>
+            <div class="card-buttons">
+              <a href="https://t.me/vasia_mreo" class="btn btn-outline" target="_blank">Дізнатись</a>
+              <a href="#contact" class="btn btn-green">Замовити</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-id-card"></i>
+            </div>
+            <h3>Заміна посвідчення</h3>
+            <p>Супровід при зміні прізвища, втраті, пошкодженні чи інших підставах.</p>
+            <div class="card-buttons">
+              <a href="https://t.me/vasia_mreo" class="btn btn-outline" target="_blank">Дізнатись</a>
+              <a href="#contact" class="btn btn-green">Замовити</a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-ban"></i>
+            </div>
+            <h3>Консультації щодо обмежень</h3>
+            <p>Пояснюємо, які процедури потрібні для законного відновлення права керування.</p>
+            <div class="card-buttons">
+              <a href="https://t.me/vasia_mreo" class="btn btn-outline" target="_blank">Дізнатись</a>
+              <a href="#contact" class="btn btn-green">Замовити</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Категорії -->
+    <section id="categories" class="section categories-section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2 class="section-title">З якими категоріями працюємо</h2>
+        <p class="section-subtitle">
+          Підтримуємо оформлення та заміну посвідчень для різних категорій транспортних засобів.
+        </p>
+        <div class="categories-grid">
+          <div class="category-card" data-aos="zoom-in" data-aos-delay="100">
+            <img src="category-a.png" alt="Категорія A" class="category-img">
+            <h3>Категорія A</h3>
+            <p>A1, A — двоколісний транспорт.</p>
+            <a href="#contact" class="btn btn-green">Оформити</a>
+          </div>
+          <div class="category-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="category-b.png" alt="Категорія B" class="category-img">
+            <h3>Категорія B</h3>
+            <p>B1, B — легкові авто до 3,5 т.</p>
+            <a href="#contact" class="btn btn-green">Оформити</a>
+          </div>
+          <div class="category-card" data-aos="zoom-in" data-aos-delay="300">
+            <img src="category-c.png" alt="Категорія C" class="category-img">
+            <h3>Категорія C</h3>
+            <p>C1, C, CE — вантажні авто.</p>
+            <a href="#contact" class="btn btn-green">Оформити</a>
+          </div>
+          <div class="category-card" data-aos="zoom-in" data-aos-delay="400">
+            <img src="category-d.png" alt="Категорія D" class="category-img">
+            <h3>Категорія D</h3>
+            <p>D1, D — автобуси, пасажирські перевезення.</p>
+            <a href="#contact" class="btn btn-green">Оформити</a>
+          </div>
+          <div class="category-card" data-aos="zoom-in" data-aos-delay="500">
+            <img src="special-equipment.png" alt="Спецтехніка" class="category-img">
+            <h3>Спецтехніка</h3>
+            <p>Трактори та інші спеціальні машини.</p>
+            <a href="#contact" class="btn btn-green">Оформити</a>
+          </div>
+          <div class="category-card" data-aos="zoom-in" data-aos-delay="600">
+            <img src="technical-passport.png" alt="Техпаспорт" class="category-img">
+            <h3>Техпаспорт</h3>
+            <p>Супровід при роботі з техпаспортом та реєстрацією авто.</p>
+            <a href="#contact" class="btn btn-green">Оформити</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ліцензія -->
+    <section id="license" class="section license-section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2 class="section-title">Ліцензія</h2>
+        <p class="section-subtitle">
+          Співпрацюємо з офіційною ліцензованою структурою, що здійснює навчання водіїв.
+        </p>
+        <div class="license-grid">
+
+          <div class="license-info">
+            <h3>ПП «АВТОШКОЛА „РЕСПЕКТ ДРАЙВ“»</h3>
+            <p><strong>Код ЄДРПОУ:</strong> 43194827</p>
+            <p><strong>Дата витягу:</strong> 11 вересня 2021 р.</p>
+            <p><strong>Адреса:</strong> 01004, м. Київ, Крутий узвіз, буд. 6/2, літ. А</p>
+            <p><strong>Дата заснування:</strong> 28.08.2019</p>
+            <p><strong>Основна діяльність:</strong> навчання водіїв та профосвіта.</p>
+            <a href="https://opendatabot.ua/c/43194827" target="_blank" class="btn btn-outline">
+              Переглянути в реєстрі
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Відгуки -->
+    <section id="reviews" class="section reviews-section" data-aos="fade-up">
+      <div class="section-inner">
+        <h2 class="section-title">Відгуки клієнтів</h2>
+        <p class="section-subtitle">
+          Скріншоти реальних листувань та відгуків клієнтів про співпрацю з нами.
+        </p>
+        <div class="reviews-grid">
+          <div class="review-card" data-aos="zoom-in" data-aos-delay="100">
+            <img src="review1.jpg" alt="Відгук клієнта 1" class="review-img">
+          </div>
+          <div class="review-card" data-aos="zoom-in" data-aos-delay="200">
+            <img src="review2.jpg" alt="Відгук клієнта 2" class="review-img">
+          </div>
+          <div class="review-card" data-aos="zoom-in" data-aos-delay="300">
+            <img src="review3.jpg" alt="Відгук клієнта 3" class="review-img">
+          </div>
+          <div class="review-card" data-aos="zoom-in" data-aos-delay="400">
+            <img src="review4.jpg" alt="Відгук клієнта 4" class="review-img">
+          </div>
+          <div class="review-card" data-aos="zoom-in" data-aos-delay="500">
+            <img src="review5.jpg" alt="Відгук клієнта 5" class="review-img">
+          </div>
+          <div class="review-card" data-aos="zoom-in" data-aos-delay="600">
+            <img src="review6.jpg" alt="Відгук клієнта 6" class="review-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакти -->
+    <section id="contact" class="section contact-section">
+      <div class="section-inner">
+        <div class="contact-card" data-aos="zoom-in">
+          <div class="manager-photo">
+            <img src="manager.jpg" alt="Менеджер">
+          </div>
+          <h2 class="section-title section-title-small">Контакти</h2>
+          <p>Щоб дізнатися деталі та вартість у вашій ситуації — напишіть нашому менеджеру.</p>
+          <a href="https://t.me/vasia_mreo" target="_blank" class="btn-telegram-main">
+            <i class="fa-brands fa-telegram"></i> Написати в Telegram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Кнопка «догори» + футер -->
+    <div class="scroll-top-wrapper">
+      <a href="#hero" class="scroll-top-btn" aria-label="Повернутися нагору">
+        <span class="arrow">↑</span> Повернутися нагору
+      </a>
+      <p class="scroll-footer">
+        © 2025 «Сервіс оформлення посвідчень». Усі права захищені. |
+        <a href="privacy.html">Політика конфіденційності</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- Плаваюча кнопка Telegram (мобільна) -->
+  <a href="https://t.me/vasia_mreo" target="_blank" class="telegram-float-mobile" aria-label="Написати в Telegram">
+    <i class="fa-brands fa-telegram"></i>
+  </a>
+
+  <!-- Скрипти -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 120,
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom'
+    });
+
+    const burger = document.getElementById('burgerBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('active');
+      navMenu.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        burger.classList.remove('active');
+        navMenu.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>
